@@ -3,6 +3,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -42,7 +47,7 @@
 	<section class="home__pro-kurs">
 		<div class = "container">
 			<div class="title__kurs">
-				<div class="stat__pro-kurs"> ПРО 
+				<div class="stat__pro-kurs"> ПРО <br> 
 					<span>курс</span>
 				</div>
 
@@ -78,23 +83,48 @@
 
 				</div>
 			</div>
-		
 
-         <div class="stat__info-foto">
-		<div class="stat__info"> лекції проходитимуть у сучасній обладнаній лабораторії
-						<li>
-				<img class="img__comp" src="img/icon1.svg" alt="image">
-				<img class="img__fan" src="img/icon2.svg" alt="image">
-				<img class="img__coffe" src="img/icon3.svg" alt="image">
-				<img class="img__coffe" src="img/icon4.svg" alt="image">
-			</li>
-         </div>
-         <div class="stat__foto">
-         	<img class="img__3" src="img/image 3.png" alt="image">
-         </div>
-		
-	</div>
-	</div>
+
+			<div class="stat__info-foto">
+				<div class="stat__info"> лекції проходитимуть у сучасній обладнаній лабораторії
+					<li class="img__icon">
+						<img class="img__comp" src="img/icon1.svg" alt="image">
+						<img class="img__fan" src="img/icon2.svg" alt="image">
+						<img class="img__cap" src="img/icon3.svg" alt="image">
+						<img class="img__coffe" src="img/icon4.svg" alt="image">
+					</li>
+				</div>
+				<div class="stat__banner-slider">
+					<div class="stat__foto">
+						<div class="stat__slider">
+							<div>
+								<img class="img__3" src="img/image 3.png" alt="image">
+							</div>
+							<div>
+								<img class="img__3" src="img/image 3.png" alt="image">
+							</div>
+							<div>
+								<img class="img__3" src="img/image 3.png" alt="image">
+							</div>
+							<div>
+								<img class="img__3" src="img/image 3.png" alt="image">
+							</div>
+						</div>
+						<div class="slider-controls">
+							<button id="slider_prev">
+								<img class="prev_foto" src="img/left-arrow.svg" alt="image">
+							</button>
+							<span id="current_slide">1</span> 
+							із
+							<span id="total_slides">4</span>
+                            <button id="slider_next">
+								<img src="img/right-arrow.svg" alt="image">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -158,18 +188,33 @@
 	<section class="home__vidhuk">
 		<div class="container">
 			<div  class="home__zajavka">
+                 <div class="home__zajavka-left">
+			<h1> Не зволікай! Залиш заявку та поринь у світ UI/UX дизайну
+			</h1>
+			    </div>
+			    <div class="home__zajavka-right">
 				<button class="but__zajavka">
-					ЗАЛИШИТИ ЗАЯВКУ</button>
-					<img class="zajavka__foto" src="img/foto5.png" alt="image"></img>
+				ЗАЛИШИТИ ЗАЯВКУ</button>
+				<img class="zajavka__foto" src="img/foto5.png" alt="image"></img>
+			    </div>
 			</div>
 
-			<div class="home__vidhuk-title">ВІДГУКИ 
+			<div class="home__vidhuk-title">ВІДГУКИ <br> 
 				<span>ВИПУСКНИКІВ</span></div>
 
-			<div class="">
-				
+				<div class="">
+
+				</div>
 			</div>
-		</div>
-	</section>
-</body>
-</html>
+		</section>
+
+
+		<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+		<!-- Slick slider -->
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+	</html>
