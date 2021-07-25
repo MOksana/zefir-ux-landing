@@ -531,6 +531,7 @@ width: 237px;
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
 }
 .clients__item {
   padding: 37px 26px 22px 25px;
