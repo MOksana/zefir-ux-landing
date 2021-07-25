@@ -528,30 +528,30 @@ width: 237px;
 
 
 //vidhuk_clients
-
 .clients {
+  width: 1202px;
+  height: 456px;
+  flex-grow: 0;
+}
+
+.vidhuk__clients {
   display: flex;
-  flex-wrap: wrap;
 }
 .clients__item {
+  width: 366px;
+  flex-grow: 0;
   padding: 37px 26px 22px 25px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  width: 33.33333%;
-  position: relative;
-
+  margin: 0 49px 2px 0;
 }
+
 .clients__content {
 width: 303px;
   height: 147px;
-  margin: 10px 0 83px 12px;
-  font-family: Roboto;
+  margin: 10px 0 50px 12px;
   font-size: 18px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #121212;
 }
@@ -560,21 +560,18 @@ width: 59px;
   height: 21px;
   flex-grow: 0;
   margin: 0 0 7px 147px;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   text-align: right;
   color: #6dcc0e;
 }
 .clients__prof {
-  width: 206px;
   height: 16px;
   flex-grow: 0;
   margin: 7px 0 0;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: bold;
-  text-align: right;
+  text-align: left;
   color: #000000;
 }
 .clients__photo {
@@ -582,6 +579,69 @@ width: 59px;
   height: 72px;
   flex-grow: 0;
   margin: 0 0 0 15px;
-  top: 309px;
-  right: 263px;
+   font-weight: bold;
+  text-align: right;
+}
+
+
+
+
+.home__kontakt{
+  width: 1440px;
+  height: 654px;
+  flex-grow: 0;
+  margin: 84px 0 0;
+  padding: 47px 105px 66px 118px;
+  background-color: #000000;
+}
+
+.kontakt__item h1 {
+  flex-grow: 0;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 0.98;
+  text-align: left;
+  color: #ffffff;
+}
+
+.kontakt__item h2 {
+  flex-grow: 0;
+  -webkit-text-stroke: 1px #ffffff;
+  font-size: 76px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.2;
+  letter-spacing: normal;
+  text-align: left;
+}
+.kontakt__item h3 {
+  width: 92px;
+  height: 23px;
+  flex-grow: 0;
+  margin: 0 259px 8px 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.kontakt__item h3:: p {
+width: 351px;
+  height: 56px;
+  flex-grow: 0;
+  margin: 8px 0 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
