@@ -447,7 +447,7 @@ font-family: Roboto;
 }
 
 .home__zajavka-left h1 {
-  font-family: Roboto;
+  
   font-size: 36px;
   font-weight: 300;
   text-align: left;
@@ -536,6 +536,8 @@ width: 237px;
 
 .vidhuk__clients {
   display: flex;
+  position: relative;
+  z-index: 2;
 }
 .clients__item {
   width: 366px;
@@ -544,6 +546,28 @@ width: 237px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   margin: 0 49px 2px 0;
+  position: relative;
+  z-index: 2;
+}
+.vidhuk__clients::before {
+  content: '';
+  width: 141px;
+  height: 141px;
+  background-color: #6dcc0e;
+  display: block;
+  position: absolute;
+  top: -21px;
+  right: -21px;
+}
+.vidhuk__clients::after {
+  content: '';
+  width: 250px;
+  height: 250px;
+  background-color: #6dcc0e;
+  display: block;
+  position: absolute;
+  bottom: -31px;
+  left: -31px;
 }
 
 .clients__content {
@@ -574,7 +598,7 @@ width: 59px;
   text-align: left;
   color: #000000;
 }
-.clients__photo {
+.clients__name img {
   width: 72px;
   height: 72px;
   flex-grow: 0;
@@ -619,23 +643,16 @@ width: 59px;
   width: 92px;
   height: 23px;
   flex-grow: 0;
-  margin: 0 259px 8px 0;
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
-.kontakt__item h3:: p {
+.adresa-home {
 width: 351px;
   height: 56px;
   flex-grow: 0;
   margin: 8px 0 0;
-  font-family: Roboto;
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -644,4 +661,90 @@ width: 351px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+}
+
+
+
+.home__kontakt-kurs{
+  display: flex;
+}
+
+.kontakt-kurs {
+  width: 635px;
+  height: 501px;
+  flex-grow: 0;
+  margin: 16px 15px 24px 159px;
+  padding: 28px 24px 32px 25px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+.kontakt-kurs h3{
+  width: 398px;
+  height: 38px;
+  flex-grow: 0;
+  margin: 0 184px 94px 4px;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.kontakt-kurs .h3 style {
+  font-weight: bold;
+  color: #6dcc0e;
+}
+
+
+
+  input {
+  height: 62px;
+  flex-grow: 0;
+  border: none;
+  background-color:transparent;
+  width: 585px;
+}
+.input-name{
+  width: 73px;
+  height: 19px;
+  flex-grow: 0;
+  margin: 0 512px 8px 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6dcc0e;
+}
+
+.input-name p {
+  width: 159px;
+  height: 24px;
+  flex-grow: 0;
+  margin: 8px 426px 9px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+}
+
+
+
+
+
+.button-kurs {
+  width: 586px;
+  height: 56px;
+  flex-grow: 0;
+  padding: 13.7px 0 9.7px;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  background-color: #6dcc0e;
 }
