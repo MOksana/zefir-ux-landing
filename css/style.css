@@ -8,6 +8,9 @@ box-sizing: border-box;
 h1, h2, h3, h4, h5, h6{
 	margin: 0;
 }
+p{
+  margin: 0;
+}
 
 /*container*/
 .container {
@@ -611,11 +614,9 @@ width: 59px;
 
 
 .home__kontakt{
-  width: 1440px;
   height: 654px;
   flex-grow: 0;
   margin: 84px 0 0;
-  padding: 47px 105px 66px 118px;
   background-color: #000000;
 }
 
@@ -639,15 +640,6 @@ width: 59px;
   letter-spacing: normal;
   text-align: left;
 }
-.kontakt__item h3 {
-  width: 92px;
-  height: 23px;
-  flex-grow: 0;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: left;
-  color: #ffffff;
-}
 .adresa-home {
 width: 351px;
   height: 56px;
@@ -662,12 +654,18 @@ width: 351px;
   text-align: left;
   color: #ffffff;
 }
+.img__merej{
+  display: flex;
+  
+  padding: 4.8px 4.8px 6.8px 6.8px;
+  
 
+}
 
 
 .home__kontakt-kurs{
   display: flex;
-}
+  }
 
 .kontakt-kurs {
   width: 635px;
@@ -677,28 +675,38 @@ width: 351px;
   padding: 28px 24px 32px 25px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
-.kontakt-kurs h3{
-  width: 398px;
-  height: 38px;
+
+.kontakt-kurs::before {
+  content: '';
+  width: 149px;
+  height: 149px;
+  background-color: #6dcc0e;
+  display: block;
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  z-index: 1;
+}
+.kontakt-kurs::after {
+  content: '';
+  width: 250px;
+  height: 250px;
+  background-color: #6dcc0e;
+  display: block;
+  position: absolute;
+  bottom: -29px;
+  left: -29px;
+  z-index: 1;
+}
+.kontakt-kurs p{
   flex-grow: 0;
-  margin: 0 184px 94px 4px;
-  font-family: Roboto;
   font-size: 32px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
 }
-
-.kontakt-kurs .h3 style {
-  font-weight: bold;
-  color: #6dcc0e;
-}
-
 
 
   input {
@@ -712,30 +720,13 @@ width: 351px;
   width: 73px;
   height: 19px;
   flex-grow: 0;
-  margin: 0 512px 8px 0;
+  margin: 58px 512px 8px 0;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #6dcc0e;
 }
-
-.input-name p {
-  width: 159px;
-  height: 24px;
-  flex-grow: 0;
-  margin: 8px 426px 9px 0;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: left;
-  color: #000000;
-}
-
-
 
 
 
