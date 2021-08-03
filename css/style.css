@@ -678,7 +678,10 @@ width: 351px;
   position: relative;
   z-index: 2;
 }
-
+.kontakt-kurs-main {
+  position: relative;
+  z-index: 2;
+}
 .kontakt-kurs::before {
   content: '';
   width: 149px;
